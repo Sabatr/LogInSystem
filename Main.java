@@ -1,4 +1,4 @@
-package viewer;
+package accountApp;
 
 import javax.swing.SwingUtilities;
 

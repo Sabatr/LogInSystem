@@ -1,4 +1,4 @@
-package viewer;
+package accountApp;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -23,8 +23,6 @@ public class TextFieldPanel extends JPanel {
 	 * On construction we add the textfields to the panel
 	 */
 	public TextFieldPanel(int numberOfFields,String[] labels) {
-		//this.setBackground(Color.GREEN);
-		
 		if (numberOfFields != labels.length) {
 			throw new NullPointerException("Must have a label for each TextField.");
 		} else {
@@ -48,13 +46,11 @@ public class TextFieldPanel extends JPanel {
 		return field;
 	}
 	/**
-	 * 
-	 * @return
+	 * This returns the text that is entered in the textfield.
 	 */
 	public List<String> returnText() {
 		List<String> textList = new ArrayList<String>();
 		for (JTextField field: textFieldList) {
-				//System.out.println(field.getText().equals(""));
 				if (!(field.getText().equals(""))) {
 					textList.add(field.getText());
 				}	

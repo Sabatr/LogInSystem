@@ -1,12 +1,7 @@
-package viewer;
+package accountApp;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.util.Random;
-
-import javax.swing.BoxLayout;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class GUI implements Observer {
 	private Observable observable = null;
@@ -32,9 +27,15 @@ public class GUI implements Observer {
 		frame.setVisible(true);
 
 	}
+	/**
+	 * Updates the GUI by removing all current components in the JFrame
+	 * then adds a new display panel.
+	 */
 	public void update() {
 			frame.getContentPane().removeAll();
+			//The display panel determines which panel is actually displayed.
 			frame.getContentPane().add(BorderLayout.CENTER,new DisplayPanel());
+			//these methods are needed to add the components to the JFrame.
 			frame.validate();
 			frame.repaint();
 		}

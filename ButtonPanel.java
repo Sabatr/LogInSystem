@@ -1,26 +1,19 @@
-package viewer;
+package accountApp;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 
-import viewer.StateSource.ButtonState;
+import accountApp.StateSource.ButtonState;
 /**
  * This class allows us to add multiple buttons as a single component
  * when adding it to the JFrame.
  * @author Brian Nguyen
  *
  */
+@SuppressWarnings("serial")
 public class ButtonPanel extends JPanel{
 	//Constants are create for the labels of the buttons.
 	private final String LOG = "Log in";
