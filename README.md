@@ -4,7 +4,7 @@ A local database is connected to the application. Whenever someone enters approp
 in the database. If they log in with valid information, they will prompted with a successful log in. The application checks this 
 by retrieving the data from the database and comparing entered information with the information from the database. </p>
 
-<p> A preview of the simple gui </p>
+<h4> A preview of the simple gui </h4>
 <img src="https://i.imgur.com/r8a7rBk.png" />
 
 <h3> How the connector works </h3>
@@ -75,7 +75,7 @@ Note: the username and password are not the real ones :)</p>
 	}
 ```
 
-<p>This method stores the information entered by the user into the database. </p.
+<p>This method stores the information entered by the user into the database. </p>
 
 ```
 	public void storeData(List<String> informationList) {
